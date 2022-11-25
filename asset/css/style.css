@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color:  rgb(149 157 165 / 20%);
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* css dùng chung */
+li {
+    list-style: none;
+}
+.open {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+.hide {
+    display: none !important;
+}
+.middle-margin {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.full-size-img{
+    width: 100%;
+    display: block;
+}
+.medium-size-img{
+    width: 80%;
+    display: block;
+}
+.btn {
+    margin-top:10px;  
+    display: inline-block;
+    padding: 10px;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgba(194, 182, 182, 0.747);
+}
+
+.background-white{
+    background-color: white;
+    border: none;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+ 
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float:left;
+    padding-left: 15px;
+    padding-right: 15px;
+} 
+.two-col {
+    width: 50%;
+}
+.three-col {
+    width: 33.333333%;
+}
+.four-col {
+    width: 25%;
+}
+.five-col {
+    width: 20%;
+    float: left;
+}
+.small-size-input {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.medium-size-input {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+.right-float {
+    display: inline-block;
+    float: right;
+}
+
+.black-btn {
+background-color: black;
+color: white;
+text-transform: uppercase;
+}
+.wheat-text {
+    color: aliceblue;
+}
+.wheat-text:hover{
+    color: wheat;
+    cursor: pointer;
+}
+
+.medium-font {
+font-size: 18px !important;
+font-family:sans-serif;
+}
+.logo {
+    margin-top: -10px; 
+    margin-left: 40px;
+}
+
+/* End dùng chung */
+
+
+/* keyframes */
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  @keyframes grow-up {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.0);
+    }
+}

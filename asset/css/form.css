@@ -1,0 +1,141 @@
+/* form */
+
+.form {
+    position: fixed;
+    /* display: flex; */
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(8, 8, 8, 0.185);
+    display: none;
+    align-items: center;
+}
+.form.open{
+    display: flex;
+    z-index: 100;
+}
+
+
+.form-container {
+    position: relative;
+    background-color: floralwhite;
+    min-height: 400px;
+    width: 600px;
+    animation-name:modalFadeIn;
+    animation-duration: 1s;
+    
+
+}
+.close-btn {
+    position: absolute;
+    right: 0;
+    padding: 8px 16px;
+    color: #ddd;
+}
+
+.close-btn:hover {
+    color: rgba(194, 182, 182, 0.747);
+    cursor: pointer;
+}
+
+
+
+.form-header {
+    width: 100%;
+    letter-spacing: 3px;
+    padding: 36px;
+    font-size: 36px;
+    text-align: center;
+    color: aliceblue;
+    background-color: #009688;
+}
+.form-label {
+    display: block;
+    margin: 15px 0 5px;
+
+}
+
+
+.form-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    color: #fff;
+    border: none;
+    background-color: #e42d20;
+    font-weight: bold;
+}
+.form-btn:hover {
+    background-color: rgba(226, 81, 81, 0.932);
+    cursor: pointer;
+}
+.form-body {
+    padding: 5px 16px;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+.form-help {
+    padding: 16px;
+}
+.form-footer {
+    margin: 10px 0px 10px;
+    padding: 8px 16px;
+    display: inline-block;
+    background-color: #c7c7be;
+    color: #fff;
+}
+
+
+.form-footer:hover {
+    cursor: pointer;
+    background-color: rgba(12, 11, 11, 0.363);
+}
+
+/* form mua hàng */
+.buy-form-body {
+    display: flex;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+}
+.buy-infor {
+    width: 30%;
+    padding: 10px;
+    border-right: 1px solid cornflowerblue;
+}
+.buy-detail {
+    padding: 10px;
+    width: 70%;
+    text-align: center;
+}
+.buy-list {
+    max-height: 200px;
+    overflow-y: auto;
+}
+.buy-list h3 {
+    text-align: center;
+    display: block;
+}
+.buy-item {
+    display: flex;
+    padding:20px ;
+    border-bottom: 1px dashed cornflowerblue;
+}
+
+.buy-item .item-img {
+    width: 100px;
+}
+.buy-item .item-detail {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
+.buy-total {
+    padding: 10px;
+}

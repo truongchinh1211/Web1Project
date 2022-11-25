@@ -1,0 +1,137 @@
+/* thẻ nav */
+
+
+
+.text-name {
+    margin-left: 10px;
+}
+
+.text-logout, .text-order {
+    color: black;
+    font-family: 'Roboto Slab', serif;
+}
+
+.text-logout:hover, .text-order:hover {
+    font-weight: bold;
+}
+
+.login-bar{
+    height: 50px;
+    line-height: 50px;
+    margin: 10px;
+
+}
+.login-bar-success, .text-order {
+    color: black;
+    text-align: center;
+}
+
+.login-bar-btn {
+    margin: 0 5px;
+    background-color: #7347c1;
+    border-radius: 25px;
+}
+#header {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(55 78 211 / 50%);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.nav {
+    display: inline-block;
+}
+#header li{
+    color: aliceblue;
+    line-height: 50px;
+
+}
+
+#header .search-bar {
+    background-color: white;
+    display: inline-block;
+    height: 30px;
+    padding-right: 8px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+#header .nav-input {
+    width: 93%;
+    margin-left: 6px;
+    padding: 7px;
+    outline: none;
+    border: none;
+}
+#header .nav i {
+    margin-left: -3px;
+    color: black;
+    padding: 1px 2px 4px;
+}
+#header .nav i:hover{
+    cursor: pointer;
+}
+#header .search-btn {
+    margin-top: 5px;
+    background-color: white;
+    border: none;
+    float: right;
+}
+
+/* menu bar cho mobile */
+#menu-mobile {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+#menu-mobile.open{
+    display: block;
+}
+#menu-mobile .menu-content {
+    background-color: white;
+    padding-top: 40px;
+}
+
+#menu-mobile .hamburger-list li a {
+    color: black;
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#header-2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 50px;
+
+}
+#header-2 .nav {
+    display: block;
+}
+#header-2 li img{
+    width:100%;
+    display: block;
+    background-color: white;
+}
+#header-2 li img:hover{
+    opacity: 0.5;
+}
+
+
+#header-2>nav>li {
+    display: inline-block;
+}
+#header-2>.nav>li:hover>a {
+    background-color: #ddd;
+}
+
+
+.category-item {
+    float:left;
+    width: 20%;
+    padding:15px;
+}
