@@ -96,6 +96,33 @@ html{
     display: flex;
     flex-direction: column-reverse;
 }
+.sidebar {
+    width: 100%;
+    bottom: unset;
+    right: 0;
+    position: relative;
+    background-color: rgb(55 78 211 / 56%);
+    padding-bottom: 10px;
+}
+.sidebar-menu li {
+    border-radius: 10px;
+    margin: 10px 20px;
+}
+.main-content {
+    width: 100%;
+    margin-left: unset;
+}
+.product_list_content {
+    font-size: 12px;
+    grid-template-columns: 2.5fr 1.1fr 0.5fr 1fr;
+}
+.order {
+    font-size: 14px;
+    grid-template-columns: 0.2fr 1.1fr 0.5fr 1fr 0.5fr;
+}
+.orderNote_customerInfo {
+    font-size: 16px;
+    padding: 5px;
 }
 
 
