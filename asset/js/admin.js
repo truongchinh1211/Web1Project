@@ -72,8 +72,6 @@ function renderOrderNotes() {
     orderList = localStorage.getItem("orderList") ? JSON.parse(localStorage.getItem("orderList")) : [];
     const orderNoteListContent = document.querySelector(".main-content")
     orderNoteListContent.innerHTML=``;
-    console.log(orderNoteListContent)
-    console.log(orderList)
     orderList.forEach((item) => {
         const tt = (item.status === "Chưa xử lý") ? "Chưa xử lý" : "Đã xử lý"
         const tt2 = (item.status === "Chưa xử lý") ? "Đã xử lý" : "Chưa xử lý"
