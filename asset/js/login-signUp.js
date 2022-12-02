@@ -14,7 +14,7 @@ function account(username,email, password) {
     this.email = email;
     this.password = password;
 }
-loginId = JSON.parse(localStorage.getItem("loginId"));
+loginId = localStorage.getItem("loginId") ? JSON.parse(localStorage.getItem("loginId")) : [];
 // =================================================== //
 // ------------------- First load -------------------- //
 // =================================================== //
@@ -235,7 +235,7 @@ signupOtion.addEventListener("submit",function(e){
     let passwordCheck = passwordValid();
     let confirmPasswordCheck = confirmPasswordValid();
     if(usernameCheck && emailCheck && passwordCheck && confirmPasswordCheck){
-        userAccounts = JSON.parse(localStorage.getItem("userAccounts"));
+        userAccounts =localStorage.getItem("userAccounts") ? JSON.parse(localStorage.getItem("userAccounts")):[];
         let check = userAccounts.some(function(item){
            return item.username === userName.value || item.email === email.value;
         })

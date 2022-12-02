@@ -845,3 +845,6 @@ let productsDB =
 
 
 ]
+
+
+localStorage.setItem("products", JSON.stringify(productsDB))

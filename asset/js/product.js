@@ -881,8 +881,8 @@ function category(categoryID, categoryName, categoryImg) {
 
 let orderList = localStorage.getItem("orderList") ? JSON.parse(localStorage.getItem("orderList")) : [];
 let cartItems;
-let categories =localStorage.getItem("orderList") ? JSON.parse(localStorage.getItem("categories")) : [];
-let products = localStorage.getItem("orderList") ? JSON.parse(localStorage.getItem("products")) :[];
+let categories =localStorage.getItem("categories") ? JSON.parse(localStorage.getItem("categories")) : [];
+let products = localStorage.getItem("products") ? JSON.parse(localStorage.getItem("products")) :[];
 let categoryProducts = products;
 let currentPage = 1;
 let itemsPerPage = 6;
