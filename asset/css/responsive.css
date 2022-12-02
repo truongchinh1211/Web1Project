@@ -124,8 +124,20 @@ html{
     font-size: 16px;
     padding: 5px;
 }
-
-
+.buy-form-body {
+    flex-direction: column-reverse;
+}
+.buy-infor {
+    width: unset;
+}
+.buy-detail {
+    width: unset;
+}
+.buy-item .item-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+}
 
 
 
@@ -138,6 +150,9 @@ html{
     width: 33.33333%;
     padding-left: 15px;
     padding-right: 15px;
+}
+#menu-mobile {
+    display: none !important;
 }
 
 }

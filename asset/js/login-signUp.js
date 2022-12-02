@@ -258,6 +258,13 @@ loginOption.addEventListener("submit",function(e){
     let loginPasswordCheck = loginPasswordValid();
     if(loginUsernameCheck && loginPasswordCheck){
             userAccounts = JSON.parse(localStorage.getItem("userAccounts"));
+            let admin = (loginUsername.value === "admin" && loginPassword.value === "admin")
+            if(admin){
+                localStorage.setItem("products", JSON.stringify(products));
+                localStorage.setItem("categories", JSON.stringify(categories));
+                window.location.href = "./admin.html";
+            } 
+            else {
             let check = userAccounts.some(function(item){
                 return item.username === loginUsername.value && item.password === loginPassword.value;
             })
@@ -270,7 +277,7 @@ loginOption.addEventListener("submit",function(e){
                 localStorage.setItem("loginId",JSON.stringify(loginId));
                 loginSuccessful(loginId);
                 closeForm();
-            }
+            }}
     }
 })
 for(const logoutOption of logoutOptions){
