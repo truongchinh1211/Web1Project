@@ -31,14 +31,14 @@ function renderProducts() {
     let str = ""
     products.forEach((item) => {
         str += `
-            <div class="product_list_content data-id="${item.id}">
+            <div class="product_list_content" data-id="${item.id}">
                 <div class="product_list_items">
                 ${item.name}
                 </div>
                 <div class="product_list_items"><span style="color:var(--theme-color)">${item.price}</span></div>
                 <div class="product_list_items">${item.quantity}</div>
                 <div class="product_list_items">
-                    <i class="fa-solid fa-trash product_delelte_btn"></i>
+                    <i class="fa-solid fa-trash product_delete_btn"></i>
                     <i class="fa-solid fa-pen-to-square product_update_btn"></i>
                 </div>
             </div>
@@ -46,11 +46,26 @@ function renderProducts() {
     })
     productList.innerHTML = str;
     mainContent.append(productList);
+    DeleteProduct();
 }
 
 
 
-
+function DeleteProduct() {
+    const DeleteBtns = document.querySelectorAll(".product_delete_btn");
+    DeleteBtns.forEach(function(item) {
+        item.onclick = function() {
+            const Dproduct = getParentElement(item,".product_list_content");
+            const DproductID = Dproduct.getAttribute("data-id");
+            console.log(DproductID);
+            const DeleteProductIndex = products.findIndex(function(i) { return i.id === DproductID})
+            console.log(DeleteProductIndex)
+            products.splice(DeleteProductIndex,1);
+            localStorage.setItem("products",JSON.stringify(products));
+            renderProducts();
+        }
+    })
+}
 
 
 

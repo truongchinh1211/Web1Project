@@ -1356,7 +1356,7 @@ function buyConfirmSubmit(total) {
             return item.userID === loginId; 
         })
         if(orderNotes.length == 0) {
-            orderListBody.innerHTML = `<span style="margin-top: 50px; display:block">Bạn chưa có đơn hàng nào, hãy mua ngay tại shop chúng tôi!</span>`
+            orderListBody.innerHTML = `<span style="padding: 10px;text-align:center; display:block">Bạn chưa có đơn hàng nào, hãy mua ngay tại shop chúng tôi!</span>`
         }
         else {
             orderListBody.innerHTML = "";
